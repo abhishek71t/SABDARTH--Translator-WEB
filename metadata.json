@@ -1,0 +1,8 @@
+{
+  "name": "Shabdarth",
+  "description": "Smart Hindi Meaning & Language Assistant. Translate complex Devanagari words and sentences into simple Hindi (सरल हिंदी) with synonyms, English equivalents, usage examples, Hinglish transliteration, debounced suggestions, audio pronunciation, on-screen keyboard, and night light toggle.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

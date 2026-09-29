@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode for Tailwind CSS v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --primary: #1a73e8;
+    --primary-hover: #1557b0;
+    --primary-light: #e8f0fe;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Soothing light & dark fade backgrounds */
+.soothing-fade-light {
+  background: radial-gradient(ellipse 90% 50% at 50% -10%, rgba(59, 130, 246, 0.05), transparent 75%), #f8fafc;
+}
+
+.soothing-fade-dark {
+  background: radial-gradient(ellipse 90% 50% at 50% -10%, rgba(59, 130, 246, 0.08), transparent 75%), #0b0f19;
+}
+
+/* Devanagari font helper */
+.hindi-font {
+  font-family: 'Noto Sans Devanagari', 'Rozha One', system-ui, sans-serif;
+}
+
+/* Custom smooth scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.45);
+}
